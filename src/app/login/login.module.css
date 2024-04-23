@@ -46,22 +46,22 @@
     font-size: 12px;
     font-weight: 600;
     line-height: 14.63px;
-
 }
 
-.policy_chk_box{
+.forgot_password{
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: .3rem;
     margin-bottom: 4rem;
-}
-
-.policy_chk_box input{
-    width: 22px;
-    height: 22px;
-    border-radius: 1px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    text-decoration: underline;
+    color: #7F7F7F;
+    ;
 }
 
 .btn{
@@ -113,7 +113,7 @@
     color: #1A7AEB;
 }
 
-.haveAnACct{
+.createAcct{
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
