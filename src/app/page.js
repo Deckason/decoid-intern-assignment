@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import SplashScreen1 from './components/splashScreens/SplashScreen1'
+import SplashScreen from './components/splashScreens/SplashScreen'
 import splashImg1 from "../../public/media/splash1.png"
 import splashImg2 from "../../public/media/splash2.png"
 
@@ -20,7 +20,7 @@ const SplashScreenContent = [
 const page = () => {
   const [SplashScreenCount , setSplashScreenCount  ] = useState(0)
   return (<div className='main'>
-    <SplashScreen1 
+    <SplashScreen 
       content={SplashScreenContent[SplashScreenCount]} 
       SplashScreenCount={SplashScreenCount} 
       setSplashScreenCount={setSplashScreenCount}
