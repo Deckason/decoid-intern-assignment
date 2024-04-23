@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "./splashScreen.module.css"
-import splashImg1 from "../../../../public/media/splash1.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { MdOutlineArrowForwardIos } from "react-icons/md";
@@ -8,7 +7,7 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 const SplashScreen1 = ({content, SplashScreenCount, setSplashScreenCount}) => {
   return (
     <div className={`${styles.container}`}>
-        <Link className={`${styles.skip_button}`} href={"#"}>Skip</Link>
+        <Link className={`${styles.skip_button}`} href={"/register"}>Skip</Link>
         <div className={`${styles.splash_img}`}>
             <Image 
                 src={content.img}

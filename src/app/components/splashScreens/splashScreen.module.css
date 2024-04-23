@@ -8,7 +8,6 @@
 }
 
 .skip_button{
-    color: var(--skip-text-color);
     font-size: x-large;
     align-self: flex-end;
 }
