@@ -1,0 +1,18 @@
+:root{
+ --skip-text-color: #9FB2FF;
+ --splash_text_h3: #2C2B2B;
+ --splash_text_content: #787878;
+ --nextSplash-background: linear-gradient(to right, #D6DFFF, #849DFF);
+}
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background: #FCFCFC;
+}
