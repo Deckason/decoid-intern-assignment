@@ -4,6 +4,8 @@
  --splash_text_h3: #2C2B2B;
  --splash_text_content: #787878;
  --nextSplash-background: linear-gradient(to right, #D6DFFF, #849DFF);
+ --form-button: linear-gradient(270deg, #7B91FF 0%, #95BEFF 100%);
+
 }
 
 *, *::after, *::before{
@@ -12,10 +14,24 @@
   box-sizing: border-box;
 }
 
+body{
+  background: #FCFCFC;
+  font-family: Montserrat;
+}
+
 .main{
   width: 100%;
   min-height: 100vh;
-  background: #FCFCFC;
   display: flex;
   justify-content: center;
+}
+
+a{
+  color: var(--skip-text-color);
+}
+
+.submitBtn{
+  background: var(--form-button);
+  border: none;
+  outline: none;
 }
