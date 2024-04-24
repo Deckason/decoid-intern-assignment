@@ -1,0 +1,91 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.form{
+    margin-inline: auto;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.form h1{
+    align-self: center;
+    margin-bottom: 1rem;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+}
+
+.form_inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 1.5rem;
+}
+
+.goal{
+    width: 100%;
+    background: #F1F1F1;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.goal p{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.63px;
+}
+
+.goal input[type="checkBox"] {
+    accent-color: #EB1754;
+    width: 22px;
+    height: 22px;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    border-radius: 12px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .form{
+        width: 80%;
+    }
+
+        
+    .form_inputs{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .container{
+        padding: 0;
+    }
+    .form{
+        width: 100%;
+    }
+}

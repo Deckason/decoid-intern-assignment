@@ -5,6 +5,18 @@
     height: 100%;
     padding: 2rem;
     gap: 1rem;
+    opacity: 1;
+    transition: 0.917s ease-in-out;
+}
+
+.container.nextSplash{
+    /* // On click
+// Navigate to: "Android Large - 2";
+// Animate: Smart animate; */
+/* animation-timing-function: ease-out;
+animation-duration: 917ms; */
+    opacity: 0;
+    /* transition: 0.917s ease-out; */
 }
 
 .skip_button{
