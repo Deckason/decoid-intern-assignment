@@ -28,7 +28,7 @@ const SplashScreen1 = ({content, setSplashScreenCount}) => {
                 setTimeout(() => {
                     setNextSplash(false)
                     setSplashScreenCount(1)
-                }, 700);
+                }, 1000);
             }}
         >
             <div className={`${styles.arc}`}>
