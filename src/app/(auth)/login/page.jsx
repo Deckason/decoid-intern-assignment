@@ -1,10 +1,13 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
 import styles from "./login.module.css"
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF } from "react-icons/fa";
+import { useRouter } from 'next/navigation';
 
 const page = () => {
+    const {push} = useRouter()
   return (
     <div className={`${styles.container}`}>
         <form className={`${styles.form}`}>
@@ -18,7 +21,12 @@ const page = () => {
                 </span>
             </div>
 
-            <button type={"submit"} className={`submitBtn ${styles.btn}`}>Sign In</button>
+            <button className={`submitBtn ${styles.btn}`}
+                onClick={(e)=>{
+                    e.preventDefault()
+                    push("/workouts/goals")
+                }}
+            >Sign In</button>
 
             <div className={styles.or}>
                 <span></span>

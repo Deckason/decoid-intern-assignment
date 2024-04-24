@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./splashScreen.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 const SplashScreen1 = ({content, SplashScreenCount, setSplashScreenCount}) => {
+    const [nextSplash, setNextSplash] = useState(false)
   return (
-    <div className={`${styles.container}`}>
+    <div className={`${styles.container} ${nextSplash && styles.nextSplash}`}>
         <Link className={`${styles.skip_button}`} href={"/register"}>Skip</Link>
         <div className={`${styles.splash_img}`}>
             <Image 
@@ -14,6 +15,7 @@ const SplashScreen1 = ({content, SplashScreenCount, setSplashScreenCount}) => {
                 height={500}
                 width={700}
                 alt={"Splash-screen-img1"}
+                priority
             />
         </div>
         <div className={`${styles.splash_text_container}`}>
@@ -21,7 +23,13 @@ const SplashScreen1 = ({content, SplashScreenCount, setSplashScreenCount}) => {
             <p className={`${styles.splash_text_content}`}>{content.content}</p>
         </div>
         <div className={`${styles.next_splash_container}`}
-            onClick={()=>{console.log(SplashScreenCount); setSplashScreenCount(1)}}
+            onClick={()=>{
+                setNextSplash(true)
+                setTimeout(() => {
+                    setSplashScreenCount(1)
+                    setNextSplash(false)
+                }, 500);
+            }}
         >
             <div className={`${styles.arc}`}>
                 <span><MdOutlineArrowForwardIos style={{color: "#fff"}}/></span>
