@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
-const SplashScreen1 = ({content, SplashScreenCount, setSplashScreenCount}) => {
+const SplashScreen1 = ({content, setSplashScreenCount}) => {
     const [nextSplash, setNextSplash] = useState(false)
   return (
     <div className={`${styles.container} ${nextSplash && styles.nextSplash}`}>
@@ -26,9 +26,9 @@ const SplashScreen1 = ({content, SplashScreenCount, setSplashScreenCount}) => {
             onClick={()=>{
                 setNextSplash(true)
                 setTimeout(() => {
-                    setSplashScreenCount(1)
                     setNextSplash(false)
-                }, 1000);
+                    setSplashScreenCount(1)
+                }, 700);
             }}
         >
             <div className={`${styles.arc}`}>

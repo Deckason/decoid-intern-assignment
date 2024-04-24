@@ -10,13 +10,8 @@
 }
 
 .container.nextSplash{
-    /* // On click
-// Navigate to: "Android Large - 2";
-// Animate: Smart animate; */
-/* animation-timing-function: ease-out;
-animation-duration: 917ms; */
-    opacity: 0;
-    /* transition: 0.917s ease-out; */
+    opacity: 0.2;
+    transition: 0.917s ease-out;
 }
 
 .skip_button{
