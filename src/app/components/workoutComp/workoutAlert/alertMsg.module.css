@@ -1,0 +1,18 @@
+.container{
+    width: 100%;
+    background: linear-gradient(90.07deg, rgba(129, 157, 255, 0.28) 5.94%, rgba(16, 16, 16, 0) 76.45%);
+    border: 1.02px solid #4545450A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+}
+
+.container span{
+    color: #7E96FF;
+}
+
+.container small{
+    width: 70%;
+}

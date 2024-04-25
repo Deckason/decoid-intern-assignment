@@ -25,10 +25,8 @@ const SplashScreen1 = ({content, setSplashScreenCount}) => {
         <div className={`${styles.next_splash_container}`}
             onClick={()=>{
                 setNextSplash(true)
-                setTimeout(() => {
-                    setNextSplash(false)
-                    setSplashScreenCount(1)
-                }, 1000);
+                setSplashScreenCount(1)
+                setNextSplash(false)
             }}
         >
             <div className={`${styles.arc}`}>
