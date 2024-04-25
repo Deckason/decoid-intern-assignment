@@ -3,6 +3,7 @@
         width: 100%;
         min-height: 100vh;
         position: relative;
+        margin-bottom: 76px;
     }
 
     .page_title{
@@ -10,7 +11,7 @@
         padding: 1rem;
         display: flex;
         align-items: center;
-        gap: 25%;
+        gap: 15%;
     }
 
     .page_title span{
@@ -36,8 +37,6 @@
 
     .main{
         width: 100%;
-        /* display: flex;
-        flex-direction: column;
-        gap: 2rem; */
+        overflow: scroll;
     }
 }

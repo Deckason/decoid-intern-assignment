@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+    .add{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 15%;
+        right: 5%;
+        width: 63px;
+        height: 63px;
+        background: linear-gradient(90.95deg, #E9B1E0 0.79%, #D3A5F2 99.18%);
+        box-shadow: 0px 4px 6.5px 0px #00000026;
+        border-radius: 50%;
+    }
+
+    .icon{
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 43.88px;
+    }
+}
