@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        margin-bottom: 76px;
+    }
+
+    .page_title{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 25%;
+    }
+
+    .page_title span{
+        background: #F1F1F1;
+        width: 20px;
+        height: 20px;
+        top: 70px;
+        left: 16px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page_title h1{
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.38px;
+        text-align: center;
+        color: #2C2B2B;
+    }
+
+    .main{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        overflow: scroll;
+    }
+}

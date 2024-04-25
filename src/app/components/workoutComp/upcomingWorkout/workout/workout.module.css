@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px) {
+    .workout{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        height: 75px;
+        border-radius: 12px;
+        box-shadow: -4px 8px 25px -8px #00000026;
+        padding: 0 .5rem;
+        /* border: 1px solid green; */
+    }
+
+    .img_cap{
+        width: 50px;
+        height: 50px;
+        background: #819AFF26;
+        border-radius: 50%;
+        margin-right: .5rem;
+    }
+
+    .img_cap img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .workout_details{
+        /* border: 1px solid blue; */
+        width: calc(100% - 100px);
+    }
+
+    .title{
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.63px;
+        color: #2C2B2B;
+    }
+
+    .time_stamp{
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12.19px;
+        text-align: left;
+        color: #7F7F7F;
+    }
+
+    .radio_button{
+        width: 40px;
+        height: 20px;
+    }
+
+    .radio_button input{
+        width: 100%;
+        height: 100%;
+    }
+}
