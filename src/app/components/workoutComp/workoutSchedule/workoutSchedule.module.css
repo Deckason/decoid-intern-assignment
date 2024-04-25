@@ -1,0 +1,69 @@
+@media screen and (max-width: 768px) {
+    .monthNav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem 0;
+    }
+    
+    .monthNav button{
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .monthNav span{
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14.63px;
+        text-align: center;
+        color: #2C2B2B;
+    }
+    
+    .dateRange{
+        width: 100%;
+        display: flex;
+        height: 76.85px;
+
+    }
+    
+    .dayContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        padding-top: .5rem;
+        gap: .5rem;
+        border-radius: 12px;
+    }
+    
+    .today{
+        background: linear-gradient(90.95deg, #DEE5FF 0.79%, #809AFF 99.18%);
+        color: #fff;
+    }
+
+    .scheduleContainer{ 
+        width: 100%;
+        display: flex;
+        flex-direction: row; 
+        margin-top: 20px;
+    }
+
+    .hourlySchedule{
+        width: 100%;
+
+    }
+
+    .hourlySchedule div{
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14.63px;
+        color: #2C2B2B;
+        padding: .5rem 0 .5rem .5rem;
+        border-bottom: 0.5px solid #7F7F7F;
+    }
+}
